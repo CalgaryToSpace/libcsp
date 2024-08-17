@@ -1,6 +1,16 @@
 The Cubesat Space Protocol
 ==========================
 
+Branching Note
+--------------
+
+This is the `libsp-cts-sat-1` branch, or a child branch of it. This branch is used for the CTS-SAT-1 project, and is based on libcsp/libcsp v1.
+
+It will remain rebased to the upstream `libcsp/libcsp -> libcsp-1` branch, until the lock-in date.
+
+Introduction
+------------
+
 Cubesat Space Protocol (CSP) is a small protocol stack written in C. CSP is designed to ease communication between distributed embedded systems in smaller networks, such as Cubesats. The design follows the TCP/IP model and includes a transport protocol, a routing protocol and several MAC-layer interfaces. The core of `libcsp` includes a router, a connection oriented socket API and message/connection pools.
 
 The protocol is based on a 32-bit header containing both transport and network-layer information. Its implementation is designed for, but not limited to, embedded systems such as the 8-bit AVR microprocessor and the 32-bit ARM and AVR from Atmel. The implementation is written in GNU C and is currently ported to run on FreeRTOS, Linux (POSIX), MacOS and Windows. The primiary platforms being used are FreeRTOS and Linux.
